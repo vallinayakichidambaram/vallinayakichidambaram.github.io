@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valli Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+
+    <script type="text/JavaScript" src="/index.js"></script>
+    <script src="https://kit.fontawesome.com/0ffc3e6dc2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+
+
+        <!---------------------------------Header-------------------------------------------------->
+        <div id="header">
+            <div class="header-container">
+                <nav>
+                    <img class="header-logo" src="images/logo.png" alt="logo">
+
+                    <ul id="side-menu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about-section">About Me</a></li>
+                        <li><a href="#services">Tech Stack</a></li>
+                        <li><a href="#my-work">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-solid fa-circle-xmark" onclick="closeMenu()"></i>
+                    </ul>
+                    <i class="fas fa-solid fa-bars" onclick="openMenu()"></i>
+                </nav>
+
+
+                <div class="header-text">
+                    <p>Blockchain Developer</p>
+                    <h1>Hi 👋🏾 <br>I am <span>Valli</span> from India</h1>
+                    <button class="download-cv"><a href="/resume_valli.pdf" download>Resume</a></button>
+                    <button class="download-cv"><a href="#contact">Contact Me <i
+                                class="fa-solid fa-arrow-right"></i></a></button>
+                </div>
+            </div>
+        </div>
+
+        <!---------------------------------About-------------------------------------------------->
+        <div id="about-section">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="user-pic">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi! I am Valli Chidambaram. I have been helping people building websites for their business - big
+                        or small. <br>
+                        I'm inclined towards solving real-world business problems through technology. I am particularly
+                        interested in Web3 & Blockchain and looking forward to learn something new everyday
+                        and contribute to the industry.</p>
+                    <div class="tab-titles">
+                        <!--<div class="tab-links active-link" onclick="opentab('skills')">Skills</div>-->
+                        <div class="tab-links active-link" onclick="opentab('experience')">Experience</div>
+                        <div class="tab-links" onclick="opentab('education')">Education</div>
+
+                    </div>
+
+                    <!-- <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Smart Contract development</span><br>Develop clean and reusable smart contracts
+                            </li>
+                            <li><span>Smart Contract Auditing</span><br>Audit smart contracts for common hacks</li>
+                            <li><span>UI/UX development</span><br>Develop user interfaces for web applications</li>
+                        </ul>
+                    </div> -->
+
+                    <div class="tab-contents active-tab" id="experience">
+                        <ul>
+                            <li><span>Blockchain Developer</span><br>Jan 2023-Present</li>
+                            <li><span>UPSC Aspirant</span><br>Jun 2018-May 2023</li>
+                            <li><span>Web Developer</span><br>Tata Consultancy Services<br>Jan 2016-May 2018</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>SRM Easwari Engineering College</span><br>Chennai,TN<br>B.E Electrical and
+                                Electronics
+                                Engineering<br>2015</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!---------------------------------My Services-------------------------------------------------->
+        <div id="services">
+            <div class="container">
+                <h1 class="services-title">Techs and Tools I use ...</h1>
+                <div class="tech-stack">
+                    <div class="img-container">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/solidity/solidity-original.svg"
+                            title="Solidity" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                            title="JavaScript" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                            title="React" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                            title="HTML5" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
+                            title="CSS3" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                            title="VS Code" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                            title="GitHub" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg"
+                            title="Oracle" />
+                    </div>
+
+
+
+                </div>
+
+                <!-- <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h2>Smart Contracts</h2>
+                        <p>Develop and deploy clean and standard samrt contracts to Ethereum Blockchain</p>
+                        <a href="#">Learn More</a>
+                    </div>
+
+
+                    <div>
+                        <i class="fa-solid fa-file-code"></i>
+                        <h2>DApp development</h2>
+                        <p>Build efficient websites for decentralised applications</p>
+                        <a href="#">Learn More</a>
+                    </div>
+
+
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web/Mobile App development</h2>
+                        <p>Interactive and attractive user interfaces</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <!---------------------------------My Work-------------------------------------------------->
+        <div id="my-work">
+            <div class="container">
+                <h2 class="work-title">Portfolio</h2>
+                <div class="work-list">
+                    <div class="work">
+                        <div class="work-col-1">
+                            <img src="images/work.png">
+                        </div>
+
+                        <div class="work-col-2">
+                            <h3>BuildCon - The Real Estate NFT App</h3>
+                            <p>The real estate NFT app lets you to list, buy and sell real estate properties</p>
+                            <p>Connect you wallet and own your property!</p>
+                            <button class="work-code"> <a href="https://github.com/vallinayakichidambaram/buildCon_realEstateNFT">Code</a></button>
+                            <!-- <button class="work-code">Site-Link</button> -->
+                        </div>
+                    </div>
+
+                </div>
+                <div>
+                    <h1 class="work-link">... More on GitHub <a href="https://github.com/vallinayakichidambaram"
+                            target="_blank" title="@vallinayakichidambaram"><i class="fa-brands fa-github"></i></a></h1>
+                </div>
+            </div>
+        </div>
+        <!---------------------------------My Contact-------------------------------------------------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>acgvalli@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>+91 9962187102</p>
+                        <p><i class="fa-solid fa-location-dot"></i>Bengaluru, India</p>
+                        <div class="social-profiles">
+                            <a href="https://github.com/vallinayakichidambaram" target="_blank"
+                                title="@vallinayakichidambaram"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://twitter.com/vallinayaki21" target="_blank" title="@vallinayaki21"><i
+                                    class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/vallinayaki_c/" target="_blank" title="vallinayaki_c"><i
+                                    class="fa-brands fa-square-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/valliaram2193/" target="_blank"
+                                title="valli-nayaki2193"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="message" rows="6" placeholder="Say Hi!"></textarea>
+                            <button type="submit" class="btn2">Submit</button>
+                        </form>
+                        <Span id="msg"></Span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Designed & Developed by Valli <i class="fa-solid fa-heart" f></i></p>
+        </div>
+
+    </div>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzijoGeER9tvsaI5tHM1eQhtC3Xieh07E3VwW5NQ8uoLBWF_8FaQ6ndkCH0PeOSeFL3eA/exec';
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully!";
+                    setTimeout(() => {
+                        msg.innerHTML = ""
+                    }, 5000);
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+
+</html>
+
+
+<!---#001233 Deep Blue
+#FF595A Coral Red
+#CAC0B3 Beige
+
+
+#DDD0C8 - beige
+#323232 - dark grey
+
+
+#d2ae6d - gold
+#808080 - black-->
